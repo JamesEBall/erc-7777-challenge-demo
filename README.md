@@ -64,7 +64,9 @@ robot-demo/
 npx hardhat compile
 ```
 
-2. Deploy single robot:
+Remove old con
+
+3. Deploy single robot:
 
 ```bash
 npx hardhat run scripts/deploy.js --network base-sepolia
@@ -141,5 +143,7 @@ docker-compose logs -f
 ```
 
 ---
+
 ## Licence
+
 MIT

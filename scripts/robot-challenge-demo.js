@@ -144,7 +144,7 @@ async function main() {
     // Impostor verification
     process.stdout.write("\nVerifying impostor robot... ");
     try {
-        const fakeVerification = await realRobot.verifyChallenge(challenge, fakeSignature);
+        const fakeVerification = await impostorRobot.verifyChallenge(challenge, fakeSignature);
         const fakeResult = await fakeVerification.wait();
         console.log("❌ PASSED (Unexpected!)");
         console.log("Transaction:", fakeResult.hash);

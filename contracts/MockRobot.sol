@@ -79,10 +79,9 @@ contract MockRobot is IUniversalIdentity {
         
         address signer = ecrecover(messageHash, v, r, s);
         
-        // Convert public key from hardware identity to address for comparison
-        address expectedSigner = address(uint160(uint256(hardwareIdentity.publicKey)));
-        
-        bool success = (signer == expectedSigner);
+        // Hash the signer's address to compare with stored public key
+        bytes32 signerHash = keccak256(abi.encodePacked(signer));
+        bool success = (signerHash == hardwareIdentity.publicKey);
         emit ChallengeVerified(challenge, success);
         
         return success;
