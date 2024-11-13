@@ -108,8 +108,6 @@ This optional add-on demonstrates how the challenge-response system could work w
 ## Prerequisites for Hardware Simulation
 
 - Docker Desktop
-- Basic understanding of embedded systems
-- All prerequisites from main demo
 
 ## Setting Up Hardware Simulation
 
