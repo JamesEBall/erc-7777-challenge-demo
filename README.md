@@ -134,13 +134,7 @@ docker-compose up -d
 npm run test:simulation
 ```
 
-2. Test tampering detection:
-
-```bash
-npm run test:tampering
-```
-
-3. View simulation logs:
+2. View simulation logs:
 
 ```bash
 docker-compose logs -f
