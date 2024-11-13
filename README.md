@@ -1,6 +1,6 @@
 # Robot Challenge-Response Authentication Demo
 
-This project demonstrates how to implement and test hardware-based challenge-response authentication for robots on the Polygon network, based on ERC-7777. The demo shows how to distinguish between an authentic robot and an impostor using cryptographic signatures.
+This project demonstrates how to implement and test hardware-based challenge-response authentication for robots on the Base network, based on ERC-7777. The demo shows how to distinguish between an authentic robot and an impostor using cryptographic signatures.
 
 ## Prerequisites
 
