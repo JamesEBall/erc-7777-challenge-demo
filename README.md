@@ -92,13 +92,6 @@ npx hardhat run scripts/robot-challenge-demo.js --network base-sepolia
    - Verify genuine robots
    - Detect impostors even if they copy visible identifiers
 
-## Important Notes
-
-- Save the deployed contract addresses and private keys that are output during deployment
-- Never use the test private keys on mainnet
-- The demo uses test tokens - no real value is at risk
-- Gas prices may need adjustment based on network conditions
-
 ---
 
 # 🔧 Add-on: STM32 Hardware Simulation
@@ -153,7 +146,6 @@ npm run test:tampering
 docker-compose logs -f
 ```
 
-## What the Hardware Simulation Demonstrates
-
-1. Hardware-based Key Storage:
-   - Simulates secure element for key storage
+---
+## Licence
+MIT
