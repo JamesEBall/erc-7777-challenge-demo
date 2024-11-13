@@ -13,8 +13,8 @@ This project demonstrates how to implement and test hardware-based challenge-res
 1. Clone this repository:
 
 ```bash
-git clone <your-repo-url>
-cd robot-demo
+git clone https://github.com/JamesEBall/erc-7777-challenge-demo
+cd erc-7777-challenge-demo
 ```
 
 2. Install dependencies:
