@@ -1,6 +1,12 @@
 # Robot Challenge-Response Authentication Demo
 
+<<<<<<< Updated upstream
 This project demonstrates how to implement and test hardware-based challenge-response authentication for robots on the Base network, based on ERC-7777. The demo shows how to distinguish between an authentic robot and an impostor using cryptographic signatures.
+||||||| Stash base
+This project demonstrates how to implement and test hardware-based challenge-response authentication for robots on the Polygon network, based on ERC-7777. The demo shows how to distinguish between an authentic robot and an impostor using cryptographic signatures.
+=======
+This project demonstrates how to implement and test hardware-based challenge-response authentication for robots on the BASE network, based on ERC-7777. The demo shows how to distinguish between an authentic robot and an impostor using cryptographic signatures.
+>>>>>>> Stashed changes
 
 ## Prerequisites
 
@@ -40,7 +46,7 @@ To get these values:
 
 - For RPC URL: [Chainlist](https://chainlist.org/chain/8453)
 - For wallet: Export your private key from MetaMask (without the '0x' prefix)
-- Get test ETH from a BASE Faucet
+- Get test ETH from [Base Sepolia Faucet](https://www.coinbase.com/faucets/base-sepolia-faucet)
 
 ## Project Structure
 
@@ -73,7 +79,7 @@ npx hardhat run scripts/deploy.js --network base-sepolia
 3. Run full challenge-response demo:
 
 ```bash
-px hardhat run scripts/robot-challenge-demo.js --network base-sepolia
+npx hardhat run scripts/robot-challenge-demo.js --network base-sepolia
 ```
 
 ## What the Demo Does
@@ -99,6 +105,63 @@ px hardhat run scripts/robot-challenge-demo.js --network base-sepolia
 - The demo uses test tokens - no real value is at risk
 - Gas prices may need adjustment based on network conditions
 
-## License
+---
 
-MIT
+# 🔧 Add-on: STM32 Hardware Simulation
+
+This optional add-on demonstrates how the challenge-response system could work with actual robot hardware using an STM32 microcontroller simulation.
+
+## Prerequisites for Hardware Simulation
+
+- Docker Desktop
+- Basic understanding of embedded systems
+- All prerequisites from main demo
+
+## Setting Up Hardware Simulation
+
+1. Install Docker Desktop:
+
+```bash
+# Using brew on macOS
+brew install --cask docker
+
+# Or download from Docker website
+```
+
+2. Start Docker Desktop and verify installation:
+
+```bash
+docker --version
+docker-compose --version
+```
+
+3. Build the simulation environment:
+
+```bash
+docker-compose up -d
+```
+
+## Running Hardware Tests
+
+1. Test challenge-response with simulated hardware:
+
+```bash
+npm run test:simulation
+```
+
+2. Test tampering detection:
+
+```bash
+npm run test:tampering
+```
+
+3. View simulation logs:
+
+```bash
+docker-compose logs -f
+```
+
+## What the Hardware Simulation Demonstrates
+
+1. Hardware-based Key Storage:
+   - Simulates secure element for key storage

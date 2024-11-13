@@ -1,17 +1,43 @@
 {
   "name": "robot-demo",
   "version": "1.0.0",
+  "description": "Robot Challenge-Response Authentication Demo with STM32 Simulation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "simulate": "docker-compose up -d && npm run test:simulation",
+    "test:simulation": "hardhat test test/integration/stm32-challenge-response.test.js",
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network base-sepolia",
+    "demo": "hardhat run scripts/robot-challenge-demo.js --network base-sepolia"
   },
-  "keywords": [],
+  "keywords": [
+    "ethereum",
+    "hardhat",
+    "robots",
+    "authentication",
+    "stm32",
+    "simulation"
+  ],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "dependencies": {
+    "hardhat": "^2.22.15",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "dotenv": "^16.4.5",
-    "hardhat": "^2.22.15"
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "chai": "^4.3.7",
+    "ethers": "^6.4.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.3.0"
   }
 }
