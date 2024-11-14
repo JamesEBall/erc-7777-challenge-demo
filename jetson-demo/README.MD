@@ -13,7 +13,6 @@ This demo shows how to deploy a robot contract, run the verifier, and test the c
   PRIVATE_KEY="your-wallet-private-key"
   ```
 
-
 ## Steps
 
 **Deploy Robot Contract**
@@ -21,7 +20,7 @@ This demo shows how to deploy a robot contract, run the verifier, and test the c
  First, deploy the robot contract and create its configuration:
 
 ```
-npx hardhat run jetson-demo/deploy/deploy-robot.js –network base-sepolia
+npx hardhat run jetson-demo/deploy/deploy-robot.js --network base-sepolia
 ```
 
 This will:
@@ -52,7 +51,7 @@ The verifier will:
 In another terminal, run the demo script to test the challenge-response:
 
 ```
-npx hardhat run jetson-demo/scripts/jetson-challenge-demo.js –network base-sepolia
+npx hardhat run jetson-demo/scripts/jetson-challenge-demo.js --network base-sepolia
 ```
 
 This will:
