@@ -1,0 +1,8 @@
+{
+  "network": "base-sepolia",
+  "robotAddress": "0x24114C9C6f59f1De86Fa4d805CB800B956cF4313",
+  "robotPrivateKey": "0xf73f23cdf520d257969177ea3b59f6b494c3733d0057d6b817740a7d82ec1d9c",
+  "publicKeyHash": "0x21bee0e285c248d1f4af7ac6d11aac257f134629f11f15227213e20f739aafeb",
+  "rpcUrl": "https://sepolia.base.org",
+  "timestamp": "2024-11-14T01:31:49.297Z"
+}
